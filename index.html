@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gazin - Site indisponível</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #121212;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-desktop {
+            display: block;
+            box-shadow: 2px 7px 13px #0b0b0b;
+        }
+
+        .image-mobile {
+            display: none;
+            box-shadow: 2px 7px 13px #0b0b0b;
+        }
+
+        @media(max-width: 480px) {
+            .image-desktop {
+                display: none;
+            }
+
+            .image-mobile {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src='./informativo_desktop.png' alt='Informativo site indisponível' class='image-desktop' />
+        <img src='./informativo_mobile.png' alt='Informativo site indisponível' class='image-mobile' />
+    </div>
+</body>
+
+</html>
